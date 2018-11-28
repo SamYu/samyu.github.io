@@ -35,8 +35,8 @@
 }
 
 #top-menu a {
-  transition: .5s ease-out;
-  -webkit-transition: .5s all ease-out;
+  transition: .5s color ease-out;
+  -webkit-transition: .5s color ease-out;
   color: #black;
 }
 
@@ -55,7 +55,7 @@ li {
 
 #top-menu li.active a {
   border-right: 3px solid black;
-  color: #333;
+  color: black;
 }
 
 #Experience {
@@ -68,6 +68,11 @@ li {
   top: 300vh;
 }
 
+#Contact {
+  position: absolute;
+  top: 400vh;
+}
+
 .sidebar-text {
   font-family: 'Raleway', sans-serif;
   padding: 6px 8px 6px 16px;
@@ -76,7 +81,15 @@ li {
 }
 
 .main {
- height: 400vh;
+ height: 600vh;
  margin-top: 10px;
  margin-left: 40vh;
+}
+
+.profile {
+  max-width: 40%;
+  max-height: 40%;
+  float:right;
+  position: absolute;
+  z-index: -1;
 }
