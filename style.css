@@ -98,6 +98,8 @@ li {
 }
 
 .logo {
-  float:left;
+  padding-top: 5vh;
+  margin-right: 5vh;
   position: relative;
+  max-width: 8%;
 }
