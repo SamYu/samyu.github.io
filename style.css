@@ -1,0 +1,82 @@
+.name {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 25vh;
+  margin-bottom: 0;
+  font-size: 110px;
+}
+
+.subtext {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.bio {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 70px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#top-menu {
+  width: 20%;
+  top: 0;
+  text-align: right;
+  padding-right: 15vh;
+  padding-top: 20vh;
+  position: fixed;
+}
+
+#top-menu a {
+  transition: .5s ease-out;
+  -webkit-transition: .5s all ease-out;
+  color: #black;
+}
+
+#top-menu a:hover {
+  color:  black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+#top-menu li {
+  float: right;
+}
+
+#top-menu li.active a {
+  border-right: 3px solid black;
+  color: #333;
+}
+
+#Experience {
+  position: absolute;
+  top: 200vh;
+}
+
+#Projects {
+  position: absolute;
+  top: 300vh;
+}
+
+.sidebar-text {
+  font-family: 'Raleway', sans-serif;
+  padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    color: #818181;
+}
+
+.main {
+ height: 400vh;
+ margin-top: 10px;
+ margin-left: 40vh;
+}
