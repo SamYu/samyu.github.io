@@ -103,3 +103,26 @@ li {
   position: relative;
   max-width: 8%;
 }
+
+.image-link {
+  text-decoration: none !important;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.resume {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+
+.resume:hover {
+  text-decoration: none !important;
+  color: black;
+  opacity: 0.5;
+}
