@@ -1,5 +1,11 @@
-<<<<<<< HEAD
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sam Yu's Personal Website
+Welcome to my personal website! Here I showcase my projects, experiences, and other things I find interesting.
+
+## Work in Progress:
+- Complete projects section
+- Add languages & frameworks section
+- Add contact section
+- optimize for all browsers
 
 ## Available Scripts
 
@@ -68,11 +74,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
-# Personal Website
-
-TO DO:
-- Add projects section
-- Add languages & frameworks section
-- Add contact section
-- optimize for all browsers
->>>>>>> 6f6162397f40f8f77238d16786e1364ee8aeb014
