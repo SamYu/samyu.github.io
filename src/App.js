@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-      <img src="/images/transparent-profile.png" alt="Portrait of Me" className="profile"/>
+        <img src="/images/transparent-profile.png" alt="Portrait of Me" className="profile"/>
 
-      <Landing />
+        <Landing />
 
         <section id="Experience" className="timeline">
           <div className="container">
@@ -26,7 +26,14 @@ class App extends Component {
                   <h3><i>Webveloper</i></h3>
                 </div>
                 <div className="date">DEC 2018 – PRESENT</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                <ul>
+                  <li>Implemented media component blocks using React.js and
+                  Material UI and increased customizability of sitebuilding
+                  template for customers</li>
+                  <li>Implemented media component blocks using React.js and
+                  Material UI and increased customizability of sitebuilding
+                  template for customers</li>
+                </ul>
               </div>
             </div>
 
@@ -60,19 +67,6 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="timeline-item">
-              <div className="timeline-img"></div>
-              <div className="timeline-content timeline-card js--fadeInRight">
-                <div className="timeline-img-header">
-                  <a href="https://www.ihpyc.com" target="_blank">
-                  <span className="link-spanner"></span></a>
-                  <h3><i>Director of Ambassadors</i></h3>
-                  <h2>IHPYC</h2>
-                </div>
-                <div className="date">SEP 2016 – JUN 2018</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-              </div>
-            </div>
 
           </div>
         </section>
