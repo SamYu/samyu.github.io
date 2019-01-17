@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400|Raleway:800" rel="stylesheet">
+    <link rel="stylesheet" href="<NODE_MODULES_FOLDER>/react-responsive-carousel/lib/styles/carousel.min.css"/>
     <title>Sam Yu</title>
   </head>
   <body>
@@ -18,17 +19,17 @@
         </ul>
         </div>
     </div>
-          <img src="images/transparent-profile.png" alt="Portrait of Me" class="profile">
+          <img src="../images/transparent-profile.png" alt="Portrait of Me" class="profile">
       <div class="home">
         <h1 class="name">SAM YU</h1>
         <p class="subtext">Aspiring Software Developer </p>
         <p class="bio">I'm a Computer Science student at the University of Waterloo.  I will be on Co-op starting April 2019.</p>
         <div class="links">
         <a href="https://www.github.com/SamYu" class="image-link" target="_blank">
-          <img src="images/github.png" alt="Github" class="logo">
+          <img src="../images/github.png" alt="Github" class="logo">
         </a>
         <a href="https://www.linkedin.com/in/yu-sam/" class="image-link" target="_blank">
-          <img src="images/linkedin.png" alt="linkedin" class="logo">
+          <img src="../images/linkedin.png" alt="linkedin" class="logo">
         </a>
         <a href="resume.pdf" class="resume" target="_blank">Resume</a>
       </div>
@@ -97,6 +98,7 @@
         </div>
       </section>
       <div id="Projects" class="projects">
+        <div id="DemoCarousel"></div>
       </div>
       <div id="Contact" class="contact">
       </div>
@@ -104,6 +106,12 @@
       <script src="jquery-3.3.1.js"></script>
       <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
       <script src="script.js"></script>
+      <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+      <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+      <!-- Load our React component. -->
+    <script src="react-carousel.js"></script>
 
   </body>
   </html>
