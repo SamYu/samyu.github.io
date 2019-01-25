@@ -4,15 +4,18 @@ import './App.css';
 import AppCarousel from './DemoCarousel.js'
 import Landing from './Sections/Landing.js'
 import NavBar from './Sections/NavBar.js'
+import Scrollspy from 'react-scrollspy'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+      <NavBar/>
         <img src="/images/transparent-profile.png" alt="Portrait of Me" className="profile"/>
+        <section id="Home">
+          <Landing />
+        </section>
 
-        <Landing />
 
         <section id="Experience" className="timeline">
           <div className="container">

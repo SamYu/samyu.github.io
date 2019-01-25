@@ -69,9 +69,9 @@ code {
   float: right;
 }
 
-#top-menu li.active a {
+.is-current a {
   border-right: 3px solid black;
-  color: black;
+  color: #000000;
 }
 
 
@@ -80,6 +80,7 @@ code {
   padding: 6px 8px 6px 16px;
     font-size: 25px;
     color: #818181;
+
 }
 
 .home {
