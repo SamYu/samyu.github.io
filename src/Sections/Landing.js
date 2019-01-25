@@ -5,7 +5,7 @@ class Landing extends Component {
   render () {
     return (
       <div className="home">
-
+        <img src="/images/transparent-profile.png" alt="Portrait of Me" className="profile"/>
         <h1 className="name">SAM YU</h1>
         <p className="subtext">Aspiring Software Developer </p>
         <p className="bio">I'm a Computer Science student at the University of Waterloo.  I am currently applying to Co-op for summer 2019  .</p>
