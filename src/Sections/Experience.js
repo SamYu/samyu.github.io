@@ -17,12 +17,8 @@ class Experience extends Component {
               </div>
               <div className="date">DEC 2018 – PRESENT</div>
               <ul>
-                <li>Implemented media component blocks using React.js and
-                Material UI and increased customizability of sitebuilding
-                template for customers</li>
-                <li>Implemented media component blocks using React.js and
-                Material UI and increased customizability of sitebuilding
-                template for customers</li>
+                <li>Implemented site component blocks using React.js and Material UI and increased customizability of site-building template for customers</li>
+                <li>Designed site mockups for customers using React.js, EJS and Node.js and deployed to production using Jenkins and Spinnaker</li>
               </ul>
             </div>
           </div>
@@ -38,24 +34,12 @@ class Experience extends Component {
               </div>
               <div className="date">JUL 2018 – AUG 2018</div>
               <ul>
-                <li>Designed retail implementation web demo for the One Samsung Connected Home display.</li>
-                <li>Created service videos and manuals for B2B Corporate Service team and increased efficiency of service responses.</li>
-                <li>Designed Samsung SmartThings POP display and proposed implementation plan</li>
+                <li>Designed web demo for the One Samsung Connected Home display using JavaScript and jQuery</li>
+                <li>Created service documentation for Corporate Service team using Photoshop and increased efficiency of service responses through streamlining service processes</li>
               </ul>
             </div>
           </div>
 
-          <div className="timeline-item">
-            <div className="timeline-img"></div>
-            <div className="timeline-content timeline-card js--fadeInLeft">
-              <div className="timeline-img-header">
-                <h2>Glenforest Student Council</h2>
-                <h3><i>President</i></h3>
-              </div>
-              <div className="date">SEP 2016 – JUN 2018</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-            </div>
-          </div>
         </div>
       </section>
     )
