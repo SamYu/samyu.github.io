@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://samyu.github.io",
   "dependencies": {
+    "devicon": "^2.0.0",
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

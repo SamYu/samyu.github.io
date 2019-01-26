@@ -110,21 +110,31 @@ code {
 }
 
 .skillbar-title span {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .skillbar-percent {
   display: none;
 }
 
+.LogoColumn {
+  position: relative;
+  font-size: 60px;
+  display: inline-grid;
+  padding-top: 51px;
+  padding-right: 10px;
+  color: black;
+}
+
+
+
 #Languages {
   float: left;
-  padding-right: 10vh;
+  padding-right: 8vh;
 }
 
 #Technologies {
   float: right;
-  padding-left: 10vh;
   margin-right: 35vh;
 }
 
