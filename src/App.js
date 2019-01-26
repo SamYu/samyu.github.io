@@ -4,6 +4,7 @@ import './App.css';
 import Landing from './Sections/Landing.js'
 import NavBar from './Sections/NavBar.js'
 import Experience from './Sections/Experience.js'
+import Skills from './Sections/Skills.js'
 import AppCarousel from './DemoCarousel.js'
 import Scrollspy from 'react-scrollspy'
 import ScrollTop from 'react-scrolltop-button'
@@ -23,6 +24,10 @@ class App extends Component {
           <ScrollTop
             style={{ fontFamily: "Raleway", zIndex: 999}}
             text="Back to Top"/>
+
+        <div id="Skills">
+          <Skills />
+        </div>
 
         <div id="Experience">
           <Experience />

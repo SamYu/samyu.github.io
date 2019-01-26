@@ -7,8 +7,9 @@ class NavBar extends Component {
     return (
       <div className="NavBar">
         <div className="sidebar" id="top-menu">
-        <Scrollspy items={ ['Home', 'Experience', 'Projects', "Contact"] } currentClassName="is-current">
+        <Scrollspy items={ ['Home', 'Skills', 'Experience', 'Projects', "Contact"] } currentClassName="is-current">
           <li><a href="#" className="sidebar-text">Home</a></li>
+          <li><a href="#Skills" className="sidebar-text">Skills</a></li>
           <li><a href="#Experience" className="sidebar-text">Experience</a></li>
           <li><a href="#Projects" className="sidebar-text">Projects</a></li>
           <li><a href="#Contact" className="sidebar-text">Contact</a></li>

@@ -8,7 +8,7 @@ class Landing extends Component {
         <img src="/images/transparent-profile.png" alt="Portrait of Me" className="profile"/>
         <h1 className="name">SAM YU</h1>
         <p className="subtext">Aspiring Software Developer </p>
-        <p className="bio">I'm a Computer Science student at the University of Waterloo.  I am currently applying to Co-op for summer 2019  .</p>
+        <p className="bio">I'm a Computer Science student at the University of Waterloo.  I am currently applying for software developer co-op positions for Summer 2019  .</p>
         <div className="links">
         <a href="https://www.github.com/SamYu" className="image-link" target="_blank">
           <img src="/images/github.png" alt="Github" className="logo"/>

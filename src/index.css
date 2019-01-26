@@ -88,6 +88,46 @@ code {
  padding-left: 35vh;
 }
 
+#Skills {
+  height: 100vh;
+  padding-left: 35vh;
+}
+
+#SkillsRow {
+  padding-top: 20vh;
+  display: flex;
+}
+
+.SkillColumn {
+  width: 30vw;
+  flex: 50%;
+}
+
+.SkillTitle {
+  font-family: "Raleway";
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.skillbar-title span {
+  font-size: 15px;
+}
+
+.skillbar-percent {
+  display: none;
+}
+
+#Languages {
+  float: left;
+  padding-right: 10vh;
+}
+
+#Technologies {
+  float: right;
+  padding-left: 10vh;
+  margin-right: 35vh;
+}
+
 
 .projects {
   background-color: white;
