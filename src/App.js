@@ -34,7 +34,6 @@ class App extends Component {
         </div>
 
         <div id="Projects" className="projects">
-          <AppCarousel />
         </div>
 
         <div id="Contact" className="contact">
