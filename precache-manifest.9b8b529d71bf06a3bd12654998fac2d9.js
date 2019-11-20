@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/static/media/devicon.29f80b00.ttf"
   },
   {
-    "revision": "0f964a72f8fbdf9c8d4e0122b8effb40",
-    "url": "/static/media/devicon.0f964a72.woff"
-  },
-  {
     "revision": "681fa39a79c22f0035a0720e2b2bda3b",
     "url": "/static/media/devicon.681fa39a.eot"
+  },
+  {
+    "revision": "0f964a72f8fbdf9c8d4e0122b8effb40",
+    "url": "/static/media/devicon.0f964a72.woff"
   },
   {
     "revision": "74e6e6c3dcfca56767adabe83a510f2e",
