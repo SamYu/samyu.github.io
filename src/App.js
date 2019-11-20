@@ -1,47 +1,49 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Landing from './Sections/Landing.js'
 import NavBar from './Sections/NavBar.js'
 import Experience from './Sections/Experience.js'
 import Skills from './Sections/Skills.js'
-import AppCarousel from './DemoCarousel.js'
-import Scrollspy from 'react-scrollspy'
 import ScrollTop from 'react-scrolltop-button'
+import { withStyles } from '@material-ui/core/styles'
 
+const styles = {
+  app: {
+    display: 'flex',
+  },
+  appContent: {
+    overflow: 'hidden',
+    flex: '80%',
+  }
+}
 
 class App extends Component {
   render() {
     return (
       <div>
-        <NavBar/>
+        <div className={this.props.classes.app}>
+          <NavBar/>
+          <div className={this.props.classes.appContent}>
+            <Landing />
+            <Skills />
+            <Experience />
 
-        <div id="Home" className="contentDiv">
-          <Landing />
-          <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
-        </div>
+            <div id="Projects" className="projects">
+            </div>
 
+            <div id="Contact" className="contact">
+            </div>
+          </div>
           <ScrollTop
             style={{ fontFamily: "Raleway", zIndex: 999}}
-            text="Back to Top"/>
-
-        <div id="Skills">
-          <Skills />
+            text="Back to Top"
+          />
         </div>
 
-        <div id="Experience">
-          <Experience />
-        </div>
-
-        <div id="Projects" className="projects">
-        </div>
-
-        <div id="Contact" className="contact">
-        </div>
         </div>
     )
 
   }
 }
 
-export default App;
+export default withStyles(styles)(App);

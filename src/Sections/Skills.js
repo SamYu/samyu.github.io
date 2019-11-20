@@ -37,6 +37,7 @@ const colors = {
 
 class Skills extends Component {
   render () {
+    const classes = this.props.classes;
     return (
       <div id="SkillsRow">
         <div className="LogoColumn">

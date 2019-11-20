@@ -1,24 +1,66 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Scrollspy from 'react-scrollspy';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = {
+  navBar: {
+    flex: '20%',
+  },
+  navBarWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    listStyle: 'none',
+    position: 'fixed',
+    top: '20vh',
+    zIndex: 2,
+    textAlign: 'right',
+  },
+  navBarText: {
+    fontFamily: 'Raleway, sans-serif',
+    padding: '6px 8px 6px 16px',
+    fontSize: '25px',
+    color: '#818181',
+    borderRight: '3px solid transparent',
+    '&:hover': {
+      textDecoration: 'none',
+      color: 'black',
+    }
+  },
+  currentNav: {
+    '& a': {
+      borderRight: '3px solid black',
+      color: '#000000',
+    },
+  }
+}
 
 class NavBar extends Component {
+  constructor() {
+    super()
+    this.navItems = ['Home', 'Skills', 'Experience', 'Projects', "Contact"]
+  }
   render () {
     return (
-      <div className="NavBar">
-        <div className="sidebar" id="top-menu">
-        <Scrollspy items={ ['Home', 'Skills', 'Experience', 'Projects', "Contact"] } currentClassName="is-current">
-          <li><a href="#" className="sidebar-text">Home</a></li>
-          <li><a href="#Skills" className="sidebar-text">Skills</a></li>
-          <li><a href="#Experience" className="sidebar-text">Experience</a></li>
-          <li><a href="#Projects" className="sidebar-text">Projects</a></li>
-          <li><a href="#Contact" className="sidebar-text">Contact</a></li>
+      <div className={this.props.classes.navBar}>
+        <Scrollspy 
+          items={this.navItems}
+          currentClassName={this.props.classes.currentNav}
+          className={this.props.classes.navBarWrapper}
+        >
+          {this.navItems.map(nav => {
+            return (<li>
+              <a
+                href={`#${nav}`}
+                className={this.props.classes.navBarText}
+              >
+                {nav}
+              </a>
+            </li>
+          )})}
         </Scrollspy>
-
-          </div>
       </div>
     )
   }
 }
 
-export default NavBar
+export default withStyles(styles)(NavBar);
