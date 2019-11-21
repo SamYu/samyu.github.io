@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import { withStyles } from '@material-ui/core/styles';
 
-const styles = {
+const styles = theme => ({
   navBar: {
     flex: '20%',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
   navBarWrapper: {
     display: 'flex',
@@ -32,7 +35,7 @@ const styles = {
       color: '#000000',
     },
   }
-}
+})
 
 class NavBar extends Component {
   constructor() {

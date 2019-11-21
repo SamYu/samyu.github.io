@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -89,25 +89,59 @@ const technologies = {
   ],
 }
 
-const styles = {
+const styles = theme => ({
   skills: {
-    ...appStyles.section,
-    width: '70vw',
+    width: '60vw',
+    paddingTop: 100,
+    [theme.breakpoints.down('sm')]: {
+      width: '80vw',
+      margin: 'auto',
+      paddingTop: '200px',
+      textAlign: 'center',
+    },
   },
   skillsRow: {
     display: 'flex',
     justifyContent: 'space-between',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
   },
   skillsList: {
     display: 'flex',
     flexDirection: 'row',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
   },
-  name: {
-    fontFamily: 'Raleway, sans-serif',
+  sectionTitle: {
     marginBottom: '20px',
-    fontSize: '60px',
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: '40px',
+    },
   },
-}
+  subheader: {
+    marginBottom: '1em',
+  },
+  listHeader: {
+    paddingLeft: '16px',
+    marginBottom: '1em',
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: '0',
+    },
+  },
+  listItem: {
+    width: '200px',
+    [theme.breakpoints.down('sm')]: {
+      margin: 'auto',
+    },
+  },
+  skillCard: {
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: '40px',
+    },
+  }
+})
 
 function skillsList(skills, classes) {
   return (
@@ -115,20 +149,28 @@ function skillsList(skills, classes) {
       {Object.keys(skills).map(skillLevel => {
       return (
         <List
-          component="nav" 
+          component="ul" 
           subheader={
-            <ListSubheader component="div">
+            <Typography
+              variant="h3"
+              className={classes.listHeader}
+            >
               {skillLevel}
-            </ListSubheader>
+            </Typography>
           }
         >
           {skills[skillLevel].map(skill => {
             return (
-              <ListItem>
+              <ListItem className={classes.listItem}>
                 <ListItemIcon>
                   <Icon className={skill.icon}/>
                 </ListItemIcon>
-                <ListItemText primary={skill.text} />
+                <ListItemText
+                  primary={skill.text}
+                  primaryTypographyProps={{
+                    variant: "body1",
+                  }}
+                />
               </ListItem>
           )})}
         </List>
@@ -141,20 +183,20 @@ class Skills extends Component {
   render () {
     const classes = this.props.classes;
     return (
-      <div className={classes.skills} id="Skills">
-        <h1 className={classes.name}>SKILLS</h1>
+      <section className={classes.skills} id="Skills">
+        <Typography variant="h1" className={classes.sectionTitle}>SKILLS</Typography>
           <div className={classes.skillsRow}>
-            <Card elevation="5">
+            <Card elevation="5" className={classes.skillCard}>
               <CardContent>
-                <Typography variant="h6" className={classes.title}>
+                <Typography variant="h2" className={classes.subheader}>
                   {`Languages`}
                 </Typography>
                 {skillsList(skills, classes)}
               </CardContent>
             </Card>
-            <Card elevation="5">
+            <Card elevation="5" className={classes.skillCard}>
               <CardContent>
-                <Typography variant="h6" className={classes.title}>
+                <Typography variant="h2" className={classes.subheader}>
                   {`Technologies & Frameworks`}
                 </Typography>
                 {skillsList(technologies, classes)}
@@ -163,7 +205,7 @@ class Skills extends Component {
           </div>
 
 
-      </div>
+      </section>
     )
   }
 }
