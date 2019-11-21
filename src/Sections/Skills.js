@@ -1,71 +1,171 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import SkillBar from 'react-skillbars';
-import '../devicon.css';
+import React, { Component, Fragment } from 'react';
+import { withStyles } from '@material-ui/core/styles'
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListSubheader from '@material-ui/core/ListSubheader';
+import Icon from '@material-ui/core/Icon';
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import { appStyles } from '../utils/appStyles';
+import { CardContent } from '@material-ui/core';
 
+const skills = {
+  'Experienced': [
+    {
+      icon: 'fab fa-js-square',
+      text: 'JavaScript',
+    },
+    {
+      icon: 'fab fa-python',
+      text: 'Python',
+    },
+    {
+      icon: 'fas fa-file-code',
+      text: 'HTML',
+    },
+    {
+      icon: 'fab fa-css3-alt',
+      text: 'CSS/SCSS',
+    },
+  ],
+  'Proficient': [
+    {
+      icon: 'fas fa-copyright',
+      text: 'C/C++',
+    },
+    {
+      icon: 'fab fa-swift',
+      text: 'Swift',
+    },
+    {
+      icon: 'fas fa-database',
+      text: 'SQL',
+    },
+    {
+      icon: 'fas fa-dollar-sign',
+      text: 'Bash',
+    },
+  ],
+}
 
-const languages = [
-  {type: "JavaScript", level: 85},
-  {type: "Swift", level: 80},
-  {type: "HTML / CSS", level: 80},
-  {type: "Python", level: 75},
-  {type: "C / C++", level: 70},
-];
+const technologies = {
+  'Experienced': [
+    {
+      icon: 'fab fa-react',
+      text: 'React',
+    },
+    {
+      icon: 'devicon-django-plain',
+      text: 'Django',
+    },
+    {
+      icon: 'fas fa-exchange-alt',
+      text: 'REST API',
+    },
+    {
+      icon: 'fab fa-js-square',
+      text: 'Alt.js',
+    },
+    {
+      icon: 'fab fa-git-alt',
+      text: 'Git',
+    },
+  ],
+  'Proficient': [
+    {
+      icon: 'devicon-postgresql-plain',
+      text: 'PostgreSQL',
+    },
+    {
+      icon: 'fab fa-google',
+      text: 'Google Cloud Platform',
+    },
+    {
+      icon: 'devicon-amazonwebservices-original',
+      text: 'AWS S3',
+    },
+  ],
+}
 
-const technologies = [
-  {type: "React.js", level: 85},
-  {type: "Node.js", level: 75},
-  {type: "Bootstrap", level: 75},
-  {type: "jQuery", level: 70},
-  {type: "Angular.js", level: 70},
-];
-
-const colors = {
-  "bar": {
-    "hue": 0,
-    "saturation": 0,
-    "level": {
-      "minimum": 10,
-      "maximum": 80
-    }
+const styles = {
+  skills: {
+    ...appStyles.section,
+    width: '70vw',
   },
-    "title": {
-      "text": "#fff",
-      "background": "black"
-  }
+  skillsRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  skillsList: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
+  name: {
+    fontFamily: 'Raleway, sans-serif',
+    marginBottom: '20px',
+    fontSize: '60px',
+  },
+}
+
+function skillsList(skills, classes) {
+  return (
+    <div className={classes.skillsList}>
+      {Object.keys(skills).map(skillLevel => {
+      return (
+        <List
+          component="nav" 
+          subheader={
+            <ListSubheader component="div">
+              {skillLevel}
+            </ListSubheader>
+          }
+        >
+          {skills[skillLevel].map(skill => {
+            return (
+              <ListItem>
+                <ListItemIcon>
+                  <Icon className={skill.icon}/>
+                </ListItemIcon>
+                <ListItemText primary={skill.text} />
+              </ListItem>
+          )})}
+        </List>
+      )})}
+    </div>
+  )
 }
 
 class Skills extends Component {
   render () {
     const classes = this.props.classes;
     return (
-      <div id="SkillsRow">
-        <div className="LogoColumn">
-          <i class="devicon-javascript-plain"></i>
-          <i class="devicon-swift-plain"></i>
-          <i class="devicon-html5-plain"></i>
-          <i class="devicon-python-plain"></i>
-          <i class="devicon-cplusplus-plain"></i>
-        </div>
-        <div className="SkillColumn" id="Languages">
-          <h4 class="SkillTitle">Languages</h4>
-          <SkillBar skills={languages} colors={colors} height={60} animationDelay="0" animationDuration="1500"/>
-        </div>
-        <div className="LogoColumn">
-        <i class="devicon-react-original"></i>
-        <i class="devicon-nodejs-plain"></i>
-        <i class="devicon-bootstrap-plain"></i>
-        <i class="devicon-jquery-plain-wordmark"></i>
-        <i class="devicon-angularjs-plain"></i>
+      <div className={classes.skills} id="Skills">
+        <h1 className={classes.name}>SKILLS</h1>
+          <div className={classes.skillsRow}>
+            <Card elevation="5">
+              <CardContent>
+                <Typography variant="h6" className={classes.title}>
+                  {`Languages`}
+                </Typography>
+                {skillsList(skills, classes)}
+              </CardContent>
+            </Card>
+            <Card elevation="5">
+              <CardContent>
+                <Typography variant="h6" className={classes.title}>
+                  {`Technologies & Frameworks`}
+                </Typography>
+                {skillsList(technologies, classes)}
+              </CardContent>
+            </Card>
+          </div>
 
-        </div>
-        <div className="SkillColumn" id="Technologies">
-          <h4 class="SkillTitle">Frameworks & Technologies</h4>
-          <SkillBar skills={technologies} colors={colors} height={60} animationDelay="0" animationDuration="1500"/>
-        </div>
+
       </div>
     )
   }
 }
 
-export default Skills
+export default withStyles(styles)(Skills);

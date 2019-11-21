@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
+import { appStyles } from '../utils/appStyles';
 
 const styles = {
   home: {
+    ...appStyles.section,
     paddingTop: 100,
     textAlign: 'left',
     width: '60vw',
@@ -48,7 +52,13 @@ const styles = {
     marginLeft: '-25px',
     position: 'absolute',
     width: '50px',
-  }
+  },
+  buttonsWrapper: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    maxWidth: '450px',
+    marginTop: '40px',
+  },
 }
 
 class Landing extends Component {
@@ -72,15 +82,38 @@ class Landing extends Component {
               artificial intelligence, machine learning and UI/UX design. 
               I'm also a huge music nerd and love fashion, sports and photography. 
               I'm currently looking for a software developer internship for Summer 2020. I'd love to connect with you!
-         </p>
-        <div className="links">
-          <a href="https://www.github.com/SamYu" className="image-link" target="_blank">
-            <img src="/images/github.png" alt="Github" className="logo"/>
-          </a>
-          <a href="https://www.linkedin.com/in/yu-sam/" className="image-link" target="_blank">
-            <img src="/images/linkedin.png" alt="linkedin" className="logo"/>
-          </a>
-          <a href="resume.pdf" className="resume" target="_blank">Resume</a>
+        </p>
+        <div className={classes.buttonsWrapper}>
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            startIcon={<Icon className="fab fa-github"/>}
+            href="https://www.github.com/SamYu"
+            target="_blank"
+          >
+            Github
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            startIcon={<Icon className="fab fa-linkedin-in"/>}
+            href="https://www.linkedin.com/in/yu-sam/"
+            target="_blank"
+          >
+            Linkedin
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            startIcon={<Icon className="fas fa-file"/>}
+            href="resume.pdf"
+            target="_blank"
+          >
+            Resume
+          </Button>
         </div>
         <img
           className={classes.downArrow}

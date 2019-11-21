@@ -88,16 +88,6 @@ code {
  padding-left: 35vh;
 }
 
-#Skills {
-  height: 100vh;
-  padding-left: 35vh;
-}
-
-#SkillsRow {
-  padding-top: 20vh;
-  display: flex;
-}
-
 .SkillColumn {
   width: 30vw;
   flex: 50%;
@@ -138,10 +128,6 @@ code {
   margin-right: 35vh;
 }
 
-#Experience {
-  background-color: white;
-  height: 100vh;
-}
 
 .projects {
   background-color: white;
