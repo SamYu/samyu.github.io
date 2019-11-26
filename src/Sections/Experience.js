@@ -14,7 +14,7 @@ const experiences = [
     logo: '/images/webveloper.jpg',
     list: [
       '• Improved SEO by 40% for over 150 customer sites by configuring site metadata in Google Cloud Platform, prerendering static sites using react-snap, and implementing SEO focused site generation with react-helmet and react-router',
-      '• Accelerated site deployment speeds by 70% through migrating pure HTML, CSS and JavaScript webpages to dynamically generated React sites hosted on Google Cloud buckets'
+      '• Accelerated site deployment speeds by 70% through implementing fully customizable React components to autonomously generate site demos based on customer input'
     ],
   },
   {
@@ -35,7 +35,7 @@ const experiences = [
     logo: '/images/sourcedfact.png',
     list: [
       '• Developed an algorithm to increase the detection speed of credible Reddit users by 200% using Python Reddit API and Jupyter notebooks (Google Colab)',
-      '• Created a password reset feature using Django Rest Framework, Sendgrid API, and HTTP requests with axios'
+      '• Redesigned the user signup feature using REST API development and Sendgrid API, increasing the signup of credible fact checkers by 20%'
     ]
   }
 ]

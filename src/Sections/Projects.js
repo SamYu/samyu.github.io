@@ -28,6 +28,12 @@ const styles = theme => ({
 
 const projects = [
     {
+        name: 'stylist.ai',
+        type: 'Machine Learning / Android Application',
+        body: 'Created a deep learning model that reworks a given wardrobe and personalizes outfits based on the user’s style preferences using Keras, Tensorflow, and Google Cloud AI Platform',
+        stack: 'Tensorflow, Keras, Pandas, Python, Google Cloud AI Platform'
+    },
+    {
         name: 'Guidin\' George',
         type: 'SMS Application',
         body: 'Implemented an SMS application that provides users with directions without the need for an internet connection using Django Rest Framework, Twilio SMS API and Google Maps API',
