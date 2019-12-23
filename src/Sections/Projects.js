@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import { appStyles } from '../utils/appStyles';
 import { CardContent, Typography } from '@material-ui/core';
 
 const styles = theme => ({
     projects: {
-        paddingTop: 100,
-        width: '60vw',
+        paddingTop: 50,
+        width: '65vw',
+        marginBottom: '50px',
         [theme.breakpoints.down('sm')]: {
             width: '80vw',
             margin: 'auto',
@@ -18,10 +18,9 @@ const styles = theme => ({
         paddingTop: '30px',
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-between',
     },
     projectCard: {
-        margin: '10px auto',
+        margin: '10px',
         maxWidth: '400px',
         '&:hover': {
             cursor: 'pointer',
@@ -42,7 +41,10 @@ const styles = theme => ({
         '& img': {
             maxWidth: '200px',
             maxHeight: '100px',
-        }
+        },
+        [theme.breakpoints.down('sm')]: {
+            float: 'none',
+        },
     }
 })
 

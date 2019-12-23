@@ -49,6 +49,7 @@ class NavBar extends Component {
           items={this.navItems}
           currentClassName={this.props.classes.currentNav}
           className={this.props.classes.navBarWrapper}
+          offset={-100}
         >
           {this.navItems.map(nav => {
             return (<li>

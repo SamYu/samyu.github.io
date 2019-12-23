@@ -91,8 +91,9 @@ const technologies = {
 
 const styles = theme => ({
   skills: {
-    width: '60vw',
-    paddingTop: 100,
+    width: '70vw',
+    height: '80vh',
+    paddingTop: 50,
     [theme.breakpoints.down('sm')]: {
       width: '80vw',
       margin: 'auto',
@@ -102,7 +103,7 @@ const styles = theme => ({
   },
   skillsRow: {
     display: 'flex',
-    justifyContent: 'space-between',
+    flexWrap: 'wrap',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
     },
@@ -137,6 +138,8 @@ const styles = theme => ({
     },
   },
   skillCard: {
+    margin: '10px',
+    marginBottom: '20px',
     [theme.breakpoints.down('sm')]: {
       marginBottom: '40px',
     },

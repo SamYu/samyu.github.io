@@ -12,7 +12,7 @@ const styles = theme => ({
     contact: {
         ...appStyles.section,
         width: '60vw',
-        paddingTop: 100,
+        paddingTop: 50,
         [theme.breakpoints.down('sm')]: {
             margin: 'auto',
             width: '80vw',
@@ -28,6 +28,9 @@ const styles = theme => ({
         width: '200px',
         marginTop: '10px',
         alignSelf: 'center',
+        '&:hover': {
+            color: '#818181',
+        }
     },
     subheader: {
         marginTop: '20px',

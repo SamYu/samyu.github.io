@@ -63,10 +63,15 @@ const styles = theme => ({
     maxWidth: '450px',
     marginTop: '40px',
     [theme.breakpoints.down('sm')]: {
-      '& a': {
-        fontSize: '12px',
-      },
       margin: '40px auto 0',
+    }
+  },
+  button: {
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '10px',
+    },
+    '&:hover': {
+      color: '#818181',
     }
   },
 })
@@ -86,7 +91,7 @@ class Landing extends Component {
         <Typography variant="h1" className={classes.name}>SAM YU</Typography>
         <Typography variant="h2" className={classes.subheading}>Software Developer</Typography>
         <Typography variant="body1" className={classes.bio}>
-              Hi, I'm Sam, a Computer Science student at the University of Waterloo.
+              Hi, I'm Sam! I'm a Computer Science student at the University of Waterloo.
               <br/><br/>
               I'm passionate about full stack web development, dev ops engineering, 
               artificial intelligence, machine learning and UI/UX design. 
