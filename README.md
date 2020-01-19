@@ -3,6 +3,8 @@ Welcome to my personal website! Here I showcase my projects, experiences, and ot
 
 ## Check it out here! https://samyu.io/
 
+![Screenshot of the website](https://i.imgur.com/vmfNxwn.png)
+
 ### Running locally:
 Run `npm start` in the project dir
 
