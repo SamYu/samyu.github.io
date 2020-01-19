@@ -92,13 +92,15 @@ const technologies = {
 const styles = theme => ({
   skills: {
     width: '70vw',
-    height: '80vh',
     paddingTop: 50,
     [theme.breakpoints.down('sm')]: {
       width: '80vw',
       margin: 'auto',
       paddingTop: '200px',
       textAlign: 'center',
+    },
+    [theme.breakpoints.up('sm')]: {
+      height: '80vh',
     },
   },
   skillsRow: {
