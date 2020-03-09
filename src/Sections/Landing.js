@@ -93,10 +93,9 @@ class Landing extends Component {
         <Typography variant="body1" className={classes.bio}>
               Hi, I'm Sam! I'm a Computer Science student at the University of Waterloo.
               <br/><br/>
-              I'm passionate about full stack web development, dev ops engineering, 
-              artificial intelligence, machine learning and UI/UX design. 
+              I'm passionate about full stack web development, production/infrastructure engineering and dev ops engineering.
               I'm also a huge music nerd and love fashion, sports and photography. 
-              I'm currently looking for a software developer internship for Summer 2020. I'd love to connect with you!
+              I'm currently looking for a software engineering internship for Summer 2020. I'd love to connect with you!
         </Typography>
         <div className={classes.buttonsWrapper}>
           <Button

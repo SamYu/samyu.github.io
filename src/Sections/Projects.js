@@ -18,6 +18,9 @@ const styles = theme => ({
         paddingTop: '30px',
         display: 'flex',
         flexWrap: 'wrap',
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center',
+        },
     },
     projectCard: {
         margin: '10px',
@@ -49,6 +52,14 @@ const styles = theme => ({
 })
 
 const projects = [
+    {
+        name: 'Waterloo Works Skill Search',
+        type: 'API / Web Client',
+        body: 'Built a Node API and React client that scrapes jobs from the University of Waterloo’s co-op job portal and presents personalized job postings related to the user’s unique skillset',
+        stack: 'Node.js, Express.js, MongoDB, Mongoose.js, React, Redux, AWS',
+        image: 'images/wwss.png',
+        url: 'https://github.com/SamYu/WaterlooWorks-Skill-Search/'
+    },
     {
         name: 'stylist.ai',
         type: 'Machine Learning / Android Application',

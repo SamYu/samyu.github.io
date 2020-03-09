@@ -27,17 +27,13 @@ const skills = {
     },
     {
       icon: 'fab fa-css3-alt',
-      text: 'CSS/SCSS',
+      text: 'CSS / SCSS',
     },
   ],
   'Proficient': [
     {
       icon: 'fas fa-copyright',
-      text: 'C/C++',
-    },
-    {
-      icon: 'fab fa-swift',
-      text: 'Swift',
+      text: 'C / C++',
     },
     {
       icon: 'fas fa-database',
@@ -46,6 +42,10 @@ const skills = {
     {
       icon: 'fas fa-dollar-sign',
       text: 'Bash',
+    },
+    {
+      icon: 'fab fa-swift',
+      text: 'Swift',
     },
   ],
 }
@@ -61,30 +61,38 @@ const technologies = {
       text: 'Django',
     },
     {
+      icon: 'fab fa-node-js',
+      text: 'Node.js',
+    },
+    {
       icon: 'fas fa-exchange-alt',
       text: 'REST API',
-    },
-    {
-      icon: 'fab fa-js-square',
-      text: 'Alt.js',
-    },
-    {
-      icon: 'fab fa-git-alt',
-      text: 'Git',
-    },
-  ],
-  'Proficient': [
-    {
-      icon: 'devicon-postgresql-plain',
-      text: 'PostgreSQL',
     },
     {
       icon: 'fab fa-google',
       text: 'Google Cloud Platform',
     },
+  ],
+  'Proficient': [
+    {
+      icon: 'devicon-express-original',
+      text: 'Express.js',
+    },
+    {
+      icon: 'devicon-postgresql-plain',
+      text: 'PostgreSQL',
+    },
     {
       icon: 'devicon-amazonwebservices-original',
-      text: 'AWS S3',
+      text: 'AWS',
+    },
+    {
+      icon: 'fab fa-docker',
+      text: 'Docker',
+    },
+    {
+      icon: 'fab fa-git-alt',
+      text: 'Git',
     },
   ],
 }
@@ -98,9 +106,6 @@ const styles = theme => ({
       margin: 'auto',
       paddingTop: '200px',
       textAlign: 'center',
-    },
-    [theme.breakpoints.up('sm')]: {
-      height: '80vh',
     },
   },
   skillsRow: {

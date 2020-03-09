@@ -8,38 +8,40 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 const experiences = [
   {
-    company: 'Webveloper Inc',
+    company: 'Webveloper',
     dates: 'Dec 2018 - Present',
-    position: 'Customer Engineer',
+    position: 'Software Engineer, San Francisco, CA (Remote)',
     logo: '/images/webveloper.jpg',
     link: 'https://www.webveloper.com/',
     list: [
-      '• Improved SEO by 40% for over 150 customer sites by configuring site metadata in Google Cloud Platform, prerendering static sites using react-snap, and implementing SEO focused site generation with react-helmet and react-router',
-      '• Accelerated site deployment speeds by 70% through implementing fully customizable React components to autonomously generate site demos based on customer input'
-    ],
-  },
-  {
-    company: 'OnCall Health',
-    dates: 'May 2019 - Aug 2019',
-    position: 'Full Stack Software Engineer',
-    logo: '/images/oncallhealth.jpg',
-    link: 'https://www.oncallhealth.ca/',
-    list: [
-      '• Increased small business signups by 30% by implementing a self-serve signup flow using Django Rest Framework for API development and React in combination with Alt.js for state management',
-      '• Built a client-facing analytics dashboard displaying administrative data through SQL database queries using Django, PostgreSQL and chart.js',
-      '• Spearheaded creation of REST API documentation using Swagger'
+      '• Accelerated site deployment speeds by 70% through implementing fully customizable React components to autonomously generate site demos based on customer input',
+      '• Reduced cloud infrastructure costs by 90% through creating a Kubernetes cluster-wide SQL database proxy and RabbitMQ messaging queue',
+      '• Eliminated duplicate code across 12 Node.js microservices by migrating Express.js APIs to npm',
+      '• Improved SEO by 40% for over 150 customers by revamping the site hosting infrastructure in Google Cloud Platform'
     ],
   },
   {
     company: 'Sourcedfact.com',
-    dates: 'Aug 2019 - Present',
-    position: 'Software Engineer',
+    dates: 'Sep 2019 - Feb 2020',
+    position: 'Software Engineer, Contract, Toronto, ON',
     logo: '/images/sourcedfact.png',
     link: 'https://www.sourcedfact.com/',
     list: [
-      '• Developed an algorithm to increase the detection speed of credible Reddit users by 200% using Python Reddit API and Jupyter notebooks (Google Colab)',
+      '• Designed an algorithm to increase the detection speed of credible Reddit users by 200% using Python Reddit API and Google Colab’s Jupyter notebooks',
       '• Redesigned the user signup feature using REST API development and Sendgrid API, increasing the signup of credible fact checkers by 20%'
     ]
+  },
+  {
+    company: 'OnCall Health',
+    dates: 'May 2019 - Aug 2019',
+    position: 'Full Stack Software Engineer, Intern, Toronto, ON',
+    logo: '/images/oncallhealth.jpg',
+    link: 'https://www.oncallhealth.ca/',
+    list: [
+      '• Increased small business signups by 30% through building a self-serve signup page with React and an API with Django REST framework',
+      '• Built an analytics dashboard displaying administrative data of 30000 patients through chart.js visualizations and PostgreSQL database queries',
+      '• Improved patient conversion by 25% for over 100 clinics through redesigning the appointment booking feature using React, Django and Stripe API'
+    ],
   }
 ]
 
