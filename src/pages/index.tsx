@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react"
-import { PageProps, graphql } from "gatsby"
-import { createUseStyles } from 'react-jss';
+import { PageProps, graphql, useStaticQuery } from "gatsby"
+import { createUseStyles, useTheme } from 'react-jss';
 
 import Bio from '../components/Bio';
 import Navbar from '../components/Navbar';
@@ -24,48 +24,48 @@ type Data = {
   };
 }
 
-const useStyles = createUseStyles({
+const useStyles = createUseStyles((theme) => ({
   indexContainer: {
     display: 'flex',
     flexDirection: 'row',
-    padding: '3rem',
+    padding: theme.pagePadding,
     justifyContent: 'space-between',
   },
-});
+}));
 
-function SiteIndex({ data, location }: PageProps<Data>): ReactElement {
-  const classes = useStyles();
+function SiteIndex(): ReactElement {
+
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        edges {
+          node {
+            excerpt
+            fields {
+              slug
+            }
+            frontmatter {
+              date(formatString: "MMMM DD YYYY")
+              title
+              description
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const classes = useStyles({ theme: useTheme() });
   const posts = data.allMarkdownRemark.edges;
-  console.log(posts);
   return (
     <>
       <Navbar hideTitle />
       <div className={classes.indexContainer}>
         <Bio />
-        <PostsList posts={posts} />
+        <PostsList posts={posts.slice(0, 4)} isIndex />
       </div>
     </>
   );
 }
 
 export default SiteIndex;
-
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD YYYY")
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`;

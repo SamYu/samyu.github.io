@@ -5,34 +5,9 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a 
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the. Separated they live in Bookmarksgrove
+Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
-
-```jsx
-function PostCard({ post }: PostCardProps): ReactElement {
-  const classes = useStyles({ theme: useTheme() });
-  return (
-    <Link className={classes.postCardLink} to={post.fields.slug}>
-      <div className={classes.postCard}>
-        <div className={classes.postCardInfo}>
-          <p className={classes.categoryTag}>music</p>
-          <p className={classes.postDate}>{post.frontmatter.date}</p>
-        </div>
-        <h3 className={classes.postTitle}>{post.frontmatter.title}</h3>
-        <p className={classes.postDesc}>{post.frontmatter.description}</p>
-      </div>
-    </Link>
-  );
-}
-```
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 
 ## On deer horse aboard tritely yikes and much
 

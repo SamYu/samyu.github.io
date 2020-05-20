@@ -18,18 +18,21 @@ type PostsListProps = {
       };
     };
   }[];
+  isIndex: boolean;
 }
 
 const useStyles = createUseStyles((theme) => ({
   postsList: {
-    marginTop: 80,
+    marginTop: '2rem',
+    marginLeft: '5rem ',
+    maxWidth: '50%',
   },
   subtitle: {
     ...theme.subtitle,
   },
 }));
 
-function PostsList({ posts }: PostsListProps): ReactElement {
+function PostsList({ posts, isIndex }: PostsListProps): ReactElement {
   const classes = useStyles({ theme: useTheme() });
   return (
     <div className={classes.postsList}>

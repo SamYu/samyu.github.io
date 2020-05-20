@@ -17,14 +17,14 @@ const useStyles = createUseStyles((theme) => ({
     zIndex: '9999',
     width: '100%',
     height: '60px',
-    padding: '20px 45px 0',
+    padding: '20px 3rem 0',
     boxSizing: 'border-box',
   },
   link: {
     textDecoration: 'none',
     marginLeft: '60px',
     ...theme.subtitle,
-    '&:active': {
+    '&:hover': {
       textDecoration: 'underline',
     },
   },
@@ -33,6 +33,11 @@ const useStyles = createUseStyles((theme) => ({
     fontFamily: 'Roboto',
     fontWeight: '900',
     fontSize: '24px',
+    textDecoration: 'none',
+    color: 'black',
+    '&:hover': {
+      opacity: 0.7,
+    },
   },
 }));
 
@@ -40,9 +45,9 @@ function Navbar({ hideTitle }: NavbarProps): ReactElement {
   const classes = useStyles({ theme: useTheme() });
   return (
     <nav className={classes.navbar}>
-      <div className={classes.logo}>
+      <Link to="/" className={classes.logo}>
         {!hideTitle && <h1>sam yu</h1>}
-      </div>
+      </Link>
       <Link className={classes.link} to="/about">about</Link>
       <Link className={classes.link} to="/blog">blog</Link>
       <Link className={classes.link} to="/projects">projects</Link>

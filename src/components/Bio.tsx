@@ -19,10 +19,10 @@ const ICONS = [
     link: '/resume.pdf',
     icon: faFile,
   },
-  {
-    link: '/rss',
-    icon: faRssSquare,
-  },
+  // {
+  //   link: '/rss',
+  //   icon: faRssSquare,
+  // },
 ];
 
 const CURRENTLY_WORKING_ON = [
@@ -63,7 +63,7 @@ const useStyles = createUseStyles((theme) => ({
     fontFamily: 'Lato',
     fontWeight: '400',
     fontSize: 14,
-    color: '#5A5A5A',
+    color: theme.colors.textList,
     '& > li': {
       margin: '10px 0',
     },
