@@ -31,7 +31,7 @@ const useStyles = createUseStyles((theme) => ({
     flexDirection: 'row',
     padding: theme.pagePadding,
     justifyContent: 'space-between',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 900px)': {
       flexDirection: 'column',
       padding: '2rem',
     },
@@ -40,7 +40,7 @@ const useStyles = createUseStyles((theme) => ({
     marginTop: '2rem',
     marginLeft: '5rem ',
     width: '50%',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 900px)': {
       width: '100%',
       marginLeft: 0,
     },

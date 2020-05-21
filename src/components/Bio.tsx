@@ -49,7 +49,7 @@ const MUSIC_RECOMMENDATIONS = [
 const useStyles = createUseStyles((theme) => ({
   bio: {
     maxWidth: '40%',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 900px)': {
       maxWidth: '100%',
     },
   },
@@ -89,8 +89,8 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   textSection: {
-    margin: '60px 0',
-    '@media (max-width: 900px)': {
+    margin: '50px 0',
+    '@media (max-width: 1024px)': {
       margin: '20px 0',
     },
   },
