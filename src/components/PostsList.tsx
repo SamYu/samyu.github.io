@@ -30,7 +30,6 @@ const useStyles = createUseStyles((theme) => ({
 
 function PostsList({ posts, listTitle, className }: PostsListProps): ReactElement {
   const classes = useStyles({ theme: useTheme() });
-  console.log(posts);
   return (
     <div className={className}>
       <h2 className={classes.subtitle}>{listTitle}</h2>

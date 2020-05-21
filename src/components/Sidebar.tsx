@@ -67,7 +67,6 @@ function Sidebar({
   if (allTags) {
     newTags = Object.keys(tagCategories);
   }
-  console.log(newTags);
   return (
     <div className={classes.sidebar}>
       <div className={classes.tagsContainer}>

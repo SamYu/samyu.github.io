@@ -55,7 +55,7 @@ function RecentSong(): ReactElement {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: 'http://ws.audioscrobbler.com/2.0',
+      url: 'https://ws.audioscrobbler.com/2.0',
       params: {
         method: 'user.getrecenttracks',
         user: 'sxmyu',
