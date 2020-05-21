@@ -1,1 +1,11 @@
 body { margin:0; } /* Remove body margins */
+
+::selection {
+  color: white;
+  background-color:black;
+}
+
+::moz-selection {
+  color: white;
+  background-color:black;
+}

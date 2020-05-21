@@ -58,7 +58,7 @@ const useStyles = createUseStyles((theme) => ({
     fontWeight: '900',
     fontSize: '6rem',
     margin: '10px 0',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 900px)': {
       fontSize: '4rem',
     },
   },
@@ -68,10 +68,13 @@ const useStyles = createUseStyles((theme) => ({
   itemList: {
     fontFamily: 'Lato',
     fontWeight: '400',
-    fontSize: 14,
+    fontSize: 18,
     color: theme.colors.textList,
     '& > li': {
       margin: '10px 0',
+    },
+    '@media (max-width: 768px)': {
+      fontSize: 14,
     },
   },
   iconRow: {
@@ -86,7 +89,10 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   textSection: {
-    margin: '40px 0',
+    margin: '60px 0',
+    '@media (max-width: 900px)': {
+      margin: '20px 0',
+    },
   },
 }));
 
