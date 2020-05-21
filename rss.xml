@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[sam yu | software engineer | music nerd | blogger]]></title><description><![CDATA[where I write about things I find interesting]]></description><link>https://samyu.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 May 2020 06:04:41 GMT</lastBuildDate><item><title><![CDATA[console.log("hello world!")]]></title><description><![CDATA[Welcome to my new site/blog! This is where I will share things I find interesting, mostly related to software development and music!
+Those…]]></description><link>https://samyu.io/blog/hello-world/</link><guid isPermaLink="false">https://samyu.io/blog/hello-world/</guid><pubDate>Wed, 20 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Welcome to my new site/blog!&lt;/h2&gt;
+&lt;p&gt;This is where I will share things I find interesting, mostly related to software development and music!
+Those things will mostly be independent (&lt;em&gt;unless it’s about software related to music)&lt;/em&gt; so feel free to use the coloured tags on sidebar of the
+&lt;a href=&quot;/blog&quot;&gt;blog page&lt;/a&gt; to filter by categories.&lt;/p&gt;
+&lt;h3&gt;Software development topics&lt;/h3&gt;
+&lt;p&gt;My background in software development primarily comes from my ongoing Bachelor’s degree in Computer Science at the
+University of Waterloo in Waterloo, Ontario, Canada in conjunction with my industry experience.&lt;/p&gt;
+&lt;p&gt;Here are a couple of companies I’ve worked for and their respective roles, as well as tech stacks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Software Engineer at Webveloper&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;JavaScript ES6, React, Node, Express.js, Docker, Kubernetes, Google Cloud Platform&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Full Stack Software Engineer at OnCall Health&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Python, Django, PostgreSQL, AWS&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Clearly my background is primarily in web development, and many software related posts will involve web technologies of some sort.
+However, I may also post about other software topics I find interesting down the line.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5fd767f7d0c11781e06d3a310c7e8f27/49b61/js-meme.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 102.02702702702702%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAepVfLLEk00c0jSK/8QAGhABAAMBAQEAAAAAAAAAAAAAAQACEiEEEf/aAAgBAQABBQJ5Gz91HNTMSovZ61lLap//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAABIP/aAAgBAgEBPwERj//EABoQAQEAAwEBAAAAAAAAAAAAAAEAAhEhMXH/2gAIAQEABj8CuHL2Nze3QbHWSfIW/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBUWFxgf/aAAgBAQABPyFg81LDi/ZVuke2ooDKgyqORuUJhO5nkRd6jERa6n//2gAMAwEAAgADAAAAEJwPvP/EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAEDAQE/EAj/xAAXEQEBAQEAAAAAAAAAAAAAAAABEDFB/9oACAECAQE/EFEOQAyf/8QAHRABAQADAAIDAAAAAAAAAAAAAREAITFBYVFxof/aAAgBAQABPxBWgopvHVh7xiV2NYNHPfcEoGyMv3NyAQjQ2t+MUbouxi8+sct5U7uIqQhFx6tnVrR3EGUV8tZ//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;My career thus far&quot;
+        title=&quot;My career thus far&quot;
+        src=&quot;/static/5fd767f7d0c11781e06d3a310c7e8f27/1c72d/js-meme.jpg&quot;
+        srcset=&quot;/static/5fd767f7d0c11781e06d3a310c7e8f27/a80bd/js-meme.jpg 148w,
+/static/5fd767f7d0c11781e06d3a310c7e8f27/1c91a/js-meme.jpg 295w,
+/static/5fd767f7d0c11781e06d3a310c7e8f27/1c72d/js-meme.jpg 590w,
+/static/5fd767f7d0c11781e06d3a310c7e8f27/49b61/js-meme.jpg 752w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;My career thus far&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;Music topics&lt;/h3&gt;
+&lt;p&gt;As for music related topics, these will primarily be separated into music discussion and creating music.&lt;/p&gt;
+&lt;h4&gt;Music discussion&lt;/h4&gt;
+&lt;p&gt;This will consist primarily of music reviews and discussions, but all posts related to the consumption of music will be under this category.
+The genres I mostly listen to are hip-hop, EDM, pop and rock, but I’d rather not constrain myself based on genre and thus are open to
+listening/discussing any type of music.&lt;/p&gt;
+&lt;p&gt;The landing page loads my latest played song off Spotify using last.fm’s API (&lt;em&gt;using an API key that doesn’t require auth so you can’t mess with my account&lt;/em&gt;). I’ll have a post about how I built it up soon — hopefully you don’t come on the site when I’m listening to something embarrassing &lt;img alt=&quot;emoji-grimacing&quot; data-icon=&quot;emoji-grimacing&quot; style=&quot;position: relative; display: inline; top: 5px&quot; src=&quot;data:image/png;base64, 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&quot; title=&quot;emoji-grimacing&quot;&gt;&lt;/p&gt;
+&lt;p&gt;If you have any music recommendations feel free to shoot me a message at my &lt;a href=&quot;mailto:%20smyu03@gmail.com&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;email&lt;/a&gt;!&lt;/p&gt;
+&lt;h4&gt;Creating music&lt;/h4&gt;
+&lt;p&gt;My musical background is mostly in playing instruments, I’m classically trained at piano (&lt;em&gt;Grade 10 RCM for my fellow canucks&lt;/em&gt;) and I picked up a guitar in middle school and have been in love with it ever since. However, I am very rusty at piano and somehow remember how to play a few songs purely through muscle memory.&lt;/p&gt;
+&lt;p&gt;I’ve recently started learning to use Ableton Live with the primary goal of producing my own music. Currently I’m working on a melodic dubstep song heavily inspired by &lt;a href=&quot;https://open.spotify.com/track/00EFWaqXnHZ5smJNsHtnGV?si=0npPhfhGQ8q2HY0flVEyyA&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Seven Lions&lt;/a&gt;. I’m constantly trying to improve my production and I would love to hear any tips/feedback you have!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Building the site/blog&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3c8a4fd42b7a193e42e79f53748a66b8/764d0/old-site-landing.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAA6ElEQVQoz5VRTQ9EMBDtr/c31tlfsVmclBAh4eIgDopovdWuiu+sSSZtZtr33swj4zhCh75zzg+1f4NoAA0SRREMw4BlWQvgE1AyDAOSJAFjTBXetq0ATdOEEGIDqoHvCEjXdciybFFYVRVeLxOO6x4+r4GvSIh+LOZCmmb4OC5oEKDve6VSkt2pWvfIGZMcXypnrFWgTdOgrmt1yt4vW3XKlW0U7gHzPIfv08mcWK0iDEOUZamUSpJuIuhXybm4GHk2II5jeJ4Hd9ohpRT2ZFJRFLfObka+apx9emSKLkil+5R72u/qKr5Jhws8QQ9IgQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Old Site Landing Page&quot;
+        title=&quot;Old Site Landing Page&quot;
+        src=&quot;/static/3c8a4fd42b7a193e42e79f53748a66b8/fcda8/old-site-landing.png&quot;
+        srcset=&quot;/static/3c8a4fd42b7a193e42e79f53748a66b8/12f09/old-site-landing.png 148w,
+/static/3c8a4fd42b7a193e42e79f53748a66b8/e4a3f/old-site-landing.png 295w,
+/static/3c8a4fd42b7a193e42e79f53748a66b8/fcda8/old-site-landing.png 590w,
+/static/3c8a4fd42b7a193e42e79f53748a66b8/efc66/old-site-landing.png 885w,
+/static/3c8a4fd42b7a193e42e79f53748a66b8/c83ae/old-site-landing.png 1180w,
+/static/3c8a4fd42b7a193e42e79f53748a66b8/764d0/old-site-landing.png 1898w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Old Site Landing Page&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;I decided to rebuild my site from the ground up due to a combination of growing tired with the old design and the desire to explore some new features/technologies. The site is primarily made using Gatsby.js, a static site generator/framework with it’s own ecosystem of plugins. It also uses React and TypeScript and is hosted on Github Pages.&lt;/p&gt;
+&lt;h3&gt;Why Gatsby?&lt;/h3&gt;
+&lt;p&gt;What you’re seeing here is written completely in Markdown, and is parsed to html and generated using a plugin called &lt;a href=&quot;https://www.gatsbyjs.org/packages/gatsby-transformer-remark/&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;gatsby-transformer-remark&lt;/a&gt; (which is a Gatsby plugin that also supports having it’s own plugins &lt;img alt=&quot;emoji-open_mouth&quot; data-icon=&quot;emoji-open_mouth&quot; style=&quot;position: relative; display: inline; top: 5px&quot; src=&quot;data:image/png;base64, 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&quot; title=&quot;emoji-open_mouth&quot;&gt;).&lt;/p&gt;
+&lt;p&gt;Gatsby spins up it’s own node server during build time in which you can automatically create these pages based on the Markdown files, which saves a lot of time compared to writing HTML for each posts. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;posts&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;post&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; index&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; previous &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; index &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; posts&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; posts&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;index &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; index &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; posts&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;index &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;createPage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      path&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; post&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fields&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;slug&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      component&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; blogPost&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      context&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        slug&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; post&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fields&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;slug&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        previous&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        next&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;My next goal is to create a build trigger using Github Actions which runs the build every time I push a commit with new blog posts. In the future, I’d like to explore sourcing posts from a Google Drive folder and having the build step pull posts from Google Drive folder when a Github Action is triggered, completely removing the need to be at my computer to write posts!&lt;/p&gt;
+&lt;p&gt;I’ll make a guide on how to do that once it’s done! &lt;img alt=&quot;emoji-smile&quot; data-icon=&quot;emoji-smile&quot; style=&quot;position: relative; display: inline; top: 5px&quot; src=&quot;data:image/png;base64, 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&quot; title=&quot;emoji-smile&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Using TypeScript for the first time&lt;/h3&gt;
+&lt;p&gt;This was my first time building a React site using TypeScript, and in my opinion came with both pros and cons.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Static typing meant less compile-time errors&lt;/li&gt;
+&lt;li&gt;Much better code suggestions&lt;/li&gt;
+&lt;li&gt;Easy to migrate from vanilla JS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some npm packages/modules don’t have very good type definitions&lt;/li&gt;
+&lt;li&gt;Longer development time&lt;/li&gt;
+&lt;li&gt;More lines-of-code &lt;em&gt;(Gatsby’s complicated object structures don’t help)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript&quot;&gt;&lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Pros: No more &quot;Property does not exist&quot; errors when compiling!&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Cons: Having to write long types like this for each component :/&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; PostsListProps &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  posts&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    node&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      frontmatter&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        date&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        description&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      fields&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        slug&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  listTitle&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  className&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Overall, I’m not entirely sure the more complicated code was worth it for a small React based codebase, but I can definitely see the appeal for maintaining larger a codebase. However, I’m definitely going to try TypeScript with a Node backend for my next project and see if the static typing is more comfortable.&lt;/p&gt;
+&lt;p&gt;Although this is the only one post at time of writing, please check the site out! I’m planning to add About and Projects pages in the near future and hopefully stay active with these blog posts.&lt;/p&gt;</content:encoded></item></channel></rss>
