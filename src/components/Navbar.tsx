@@ -3,7 +3,7 @@ import { createUseStyles, useTheme } from 'react-jss';
 import { Link } from 'gatsby';
 
 type NavbarProps = {
-  hideTitle: boolean;
+  hideTitle?: boolean;
 };
 
 const useStyles = createUseStyles((theme) => ({
@@ -19,6 +19,9 @@ const useStyles = createUseStyles((theme) => ({
     height: '60px',
     padding: '20px 3rem 0',
     boxSizing: 'border-box',
+    '@media (max-width: 768px)': {
+      padding: '20px 2rem 0',
+    },
   },
   link: {
     textDecoration: 'none',
@@ -41,16 +44,16 @@ const useStyles = createUseStyles((theme) => ({
   },
 }));
 
-function Navbar({ hideTitle }: NavbarProps): ReactElement {
+function Navbar({ hideTitle = false }: NavbarProps): ReactElement {
   const classes = useStyles({ theme: useTheme() });
   return (
     <nav className={classes.navbar}>
       <Link to="/" className={classes.logo}>
         {!hideTitle && <h1>sam yu</h1>}
       </Link>
-      <Link className={classes.link} to="/about">about</Link>
-      <Link className={classes.link} to="/blog">blog</Link>
-      <Link className={classes.link} to="/projects">projects</Link>
+      {/* <Link className={classes.link} to="/about">about</Link> */}
+      {!hideTitle && <Link className={classes.link} to="/blog">blog</Link>}
+      {/* <Link className={classes.link} to="/projects">projects</Link> */}
     </nav>
   );
 }

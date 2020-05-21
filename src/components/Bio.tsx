@@ -49,12 +49,18 @@ const MUSIC_RECOMMENDATIONS = [
 const useStyles = createUseStyles((theme) => ({
   bio: {
     maxWidth: '40%',
+    '@media (max-width: 768px)': {
+      maxWidth: '100%',
+    },
   },
   name: {
     fontFamily: 'Roboto',
     fontWeight: '900',
     fontSize: '6rem',
     margin: '10px 0',
+    '@media (max-width: 768px)': {
+      fontSize: '4rem',
+    },
   },
   subheading: {
     ...theme.subtitle,
@@ -90,7 +96,7 @@ function Bio(): ReactElement {
     <div className={classes.bio}>
       <h1 className={classes.name}>sam yu</h1>
       <h2 className={classes.subheading}>
-        currently studying Computer Science at the University of Waterloo
+        software engineer | UW CS student | music nerd
       </h2>
       <div className={classes.iconRow}>
         {ICONS.map(({ link, icon }) => (

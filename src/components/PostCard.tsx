@@ -2,24 +2,46 @@ import React, { ReactElement } from 'react';
 import { createUseStyles, useTheme } from 'react-jss';
 import { Link } from 'gatsby';
 
+import CategoryTag from './CategoryTag';
+
+const getSizeFromString = (size) => {
+  switch (size) {
+    case 'S':
+      return {
+        height: 100,
+        titleSize: 13,
+        descSize: 10,
+        truncDesc: true,
+      };
+    default:
+      return {
+        height: 150,
+        titleSize: 18,
+        descSize: 13,
+      };
+  }
+};
+
 type PostCardProps = {
   post: {
-    excerpt: string;
     frontmatter: {
       title: string;
       date: string;
       description: string;
+      tags: string[];
     };
     fields: {
       slug: string;
     };
+    excerpt: string;
   };
+  size?: 'S' | 'M';
 }
 
 const useStyles = createUseStyles((theme) => ({
   postCard: {
     width: '100%',
-    height: 150,
+    height: ({ sizing }): number => sizing.height,
     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
     borderRadius: '22px',
     color: 'black',
@@ -34,8 +56,8 @@ const useStyles = createUseStyles((theme) => ({
   postTitle: {
     fontFamily: 'Roboto',
     fontWeight: 'bold',
-    fontSize: 18,
-    margin: '15px 0',
+    fontSize: ({ sizing }): number => sizing.titleSize,
+    margin: ({ sizing }): string => `${sizing.descSize + 2}px 0`,
   },
   postCardLink: {
     textDecoration: 'none',
@@ -46,8 +68,11 @@ const useStyles = createUseStyles((theme) => ({
   },
   postDesc: {
     fontFamily: 'Lato',
-    fontSize: 11,
+    fontSize: ({ sizing }): number => sizing.descSize,
     color: theme.colors.textSecondary,
+    overflow: ({ sizing }): string => sizing.truncDesc && 'hidden',
+    textOverflow: ({ sizing }): string => sizing.truncDesc && 'ellipsis',
+    whiteSpace: ({ sizing }): string => sizing.truncDesc && 'nowrap',
   },
   postDate: {
     fontFamily: 'Roboto',
@@ -55,29 +80,30 @@ const useStyles = createUseStyles((theme) => ({
     color: theme.colors.textSecondary,
     textTransform: 'lowercase',
     margin: 0,
-  },
-  categoryTag: {
-    borderRadius: 9,
-    backgroundColor: '#FFD39F',
-    width: 100,
-    textAlign: 'center',
-    color: '#B06000',
-    fontSize: 11,
-    fontFamily: 'Roboto',
-    fontWeight: '300',
-    lineHeight: 1.8,
-    height: 20,
-    margin: 0,
+    marginLeft: 'auto',
   },
 }));
 
-function PostCard({ post }: PostCardProps): ReactElement {
-  const classes = useStyles({ theme: useTheme() });
+function PostCard({ post, size = 'M' }: PostCardProps): ReactElement {
+  if (!post) return null;
+  const sizing = getSizeFromString(size);
+  const classes = useStyles({ sizing, theme: useTheme() });
+  let newTags = post.frontmatter.tags;
+  if (size === 'S' && post.frontmatter.tags) {
+    newTags = post.frontmatter.tags.slice(0, 2);
+  }
+
   return (
     <Link className={classes.postCardLink} to={post.fields.slug}>
       <div className={classes.postCard}>
         <div className={classes.postCardInfo}>
-          <p className={classes.categoryTag}>music</p>
+          {newTags && newTags.map((tag) => (
+            <CategoryTag
+              text={tag}
+              size={size}
+              clickable={false}
+            />
+          ))}
           <p className={classes.postDate}>{post.frontmatter.date}</p>
         </div>
         <h3 className={classes.postTitle}>{post.frontmatter.title}</h3>

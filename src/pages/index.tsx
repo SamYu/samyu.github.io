@@ -5,6 +5,7 @@ import { createUseStyles, useTheme } from 'react-jss';
 import Bio from '../components/Bio';
 import Navbar from '../components/Navbar';
 import PostsList from '../components/PostsList';
+import SEO from "../components/seo";
 
 type Data = {
   allMarkdownRemark: {
@@ -30,6 +31,19 @@ const useStyles = createUseStyles((theme) => ({
     flexDirection: 'row',
     padding: theme.pagePadding,
     justifyContent: 'space-between',
+    '@media (max-width: 768px)': {
+      flexDirection: 'column',
+      padding: '2rem',
+    },
+  },
+  postsListContainer: {
+    marginTop: '2rem',
+    marginLeft: '5rem ',
+    width: '50%',
+    '@media (max-width: 768px)': {
+      width: '100%',
+      marginLeft: 0,
+    },
   },
 }));
 
@@ -48,8 +62,15 @@ function SiteIndex(): ReactElement {
               date(formatString: "MMMM DD YYYY")
               title
               description
+              tags
             }
           }
+        }
+      }
+      site {
+        siteMetadata {
+          title
+          description
         }
       }
     }
@@ -60,9 +81,18 @@ function SiteIndex(): ReactElement {
   return (
     <>
       <Navbar hideTitle />
+      <SEO
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
+        indexPage
+      />
       <div className={classes.indexContainer}>
         <Bio />
-        <PostsList posts={posts.slice(0, 4)} isIndex />
+        <PostsList
+          listTitle="check out my blog"
+          posts={posts.slice(0, 4)}
+          className={classes.postsListContainer}
+        />
       </div>
     </>
   );

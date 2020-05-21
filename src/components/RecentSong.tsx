@@ -18,6 +18,9 @@ const useStyles = createUseStyles({
     fontSize: 36,
     margin: '10px 20px',
     color: '#5A5A5A',
+    '@media (max-width: 768px)': {
+      fontSize: 24,
+    },
   },
   title: {
     fontFamily: 'Lato',
@@ -29,6 +32,9 @@ const useStyles = createUseStyles({
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
     color: '#838383',
+    '@media (max-width: 768px)': {
+      maxWidth: '50vw',
+    },
   },
   recentSongLink: {
     textDecoration: 'none',

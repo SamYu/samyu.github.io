@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Navbar from './Navbar';
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ children }) => {
 
   return (
     <>

@@ -4,15 +4,15 @@ const theme = require('./src/utils/theme');
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `sam yu | software engineer | music nerd | blogger`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Sam Yu`,
+      summary: `software engineer and music nerd`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `where I write about things I find interesting`,
+    siteUrl: `https://samyu.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `sxmyu`,
     },
   },
   plugins: [
@@ -38,6 +38,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              showCaptions: ['title', 'alt'],
             },
           },
           {
@@ -54,6 +55,27 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: 'gatsby-remark-emojis',
+            options: {
+              active: true,
+              escapeCharacter: '#',
+              // Select the size (available size: 16, 24, 32, 64)
+              size: 24,
+              styles: {
+                position: 'relative',
+                display: 'inline',
+                top: '5px',
+              },
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow",
+            },
+          },
         ],
       },
     },
@@ -69,8 +91,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `sam yu | software engineer | blog`,
+        short_name: `samyu.io`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

@@ -18,25 +18,22 @@ type PostsListProps = {
       };
     };
   }[];
-  isIndex: boolean;
+  listTitle: string;
+  className: string;
 }
 
 const useStyles = createUseStyles((theme) => ({
-  postsList: {
-    marginTop: '2rem',
-    marginLeft: '5rem ',
-    maxWidth: '50%',
-  },
   subtitle: {
     ...theme.subtitle,
   },
 }));
 
-function PostsList({ posts, isIndex }: PostsListProps): ReactElement {
+function PostsList({ posts, listTitle, className }: PostsListProps): ReactElement {
   const classes = useStyles({ theme: useTheme() });
+  console.log(posts);
   return (
-    <div className={classes.postsList}>
-      <h2 className={classes.subtitle}>check out my blog</h2>
+    <div className={className}>
+      <h2 className={classes.subtitle}>{listTitle}</h2>
       {posts.map(({ node }) => <PostCard post={node} />)}
     </div>
   );

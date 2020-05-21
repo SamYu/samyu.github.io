@@ -4,6 +4,7 @@ import { createUseStyles, useTheme } from 'react-jss';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
+import Sidebar from '../components/Sidebar';
 
 type Data = {
   site: {
@@ -19,6 +20,7 @@ type Data = {
       title: string;
       date: string;
       description: string;
+      tags: string[];
     };
   };
 };
@@ -26,23 +28,30 @@ type Data = {
 const useStyles = createUseStyles((theme) => ({
   postContainer: {
     width: '70%',
+    '@media (max-width: 768px)': {
+      width: '100%',
+    },
   },
   postTitle: {
     fontFamily: 'Roboto',
-    fontSize: 36,
+    fontSize: '36px',
     fontWeight: 'bold',
+    '@media (max-width: 768px)': {
+      fontSize: '24px',
+    },
   },
   postDate: {
     ...theme.subtitle,
     fontSize: 20,
   },
-  sidebar: {
-    width: '30%',
-  },
   pageContainer: {
     padding: theme.pagePadding,
     marginTop: 50,
     display: 'flex',
+    justifyContent: 'space-between',
+    '@media (max-width: 768px)': {
+      flexDirection: 'column',
+    },
   },
   bodySection: {
     color: theme.colors.textPrimary,
@@ -50,7 +59,7 @@ const useStyles = createUseStyles((theme) => ({
       fontFamily: 'Roboto',
       fontWeight: 'bold',
     },
-    '& p, li, table': {
+    '& p, li, table, figcaption': {
       fontFamily: 'Lato',
       fontWeight: '400',
     },
@@ -64,6 +73,9 @@ const useStyles = createUseStyles((theme) => ({
       paddingLeft: '10px',
       fontSize: 18,
       fontStyle: 'italic',
+    },
+    '& li > p': {
+      marginBottom: 0,
     },
     '& table': {
       margin: '20px 0',
@@ -79,6 +91,11 @@ const useStyles = createUseStyles((theme) => ({
         backgroundColor: '#f6f8fa',
       },
     },
+    '& figcaption': {
+      textAlign: 'center',
+      fontStyle: 'italic',
+      color: theme.colors.textList,
+    },
   },
 }));
 
@@ -86,7 +103,6 @@ const BlogPostTemplate = ({ data, pageContext, location }: PageProps<Data>): Rea
   const classes = useStyles({ theme: useTheme() });
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
-  const { previous, next } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -109,7 +125,7 @@ const BlogPostTemplate = ({ data, pageContext, location }: PageProps<Data>): Rea
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>
-        <div className={classes.sidebar}></div>
+        <Sidebar tags={post.frontmatter.tags} tagTitle="tags" pageContext={pageContext} />
       </div>
     </Layout>
   );
@@ -126,12 +142,12 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM DD YYYY")
         description
+        tags
       }
     }
   }
