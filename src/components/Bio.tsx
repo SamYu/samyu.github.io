@@ -23,10 +23,10 @@ const ICONS = [
     link: '/resume.pdf',
     icon: faFile,
   },
-  // {
-  //   link: '/rss',
-  //   icon: faRssSquare,
-  // },
+  {
+    link: '/rss.xml',
+    icon: faRssSquare,
+  },
 ];
 
 const CURRENTLY_WORKING_ON = [
