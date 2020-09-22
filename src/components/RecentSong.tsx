@@ -8,6 +8,7 @@ const useStyles = createUseStyles({
     fontWeight: '400',
     fontSize: 24,
     color: '#838383',
+    marginBottom: 3,
   },
   recentSong: {
     display: 'flex',
@@ -47,6 +48,13 @@ const useStyles = createUseStyles({
     width: 100,
     height: 100,
   },
+  smallText: {
+    fontFamily: 'Lato',
+    fontWeight: '400',
+    fontSize: 18,
+    color: '#838383',
+    marginTop: 3,
+  }
 });
 
 function RecentSong(): ReactElement {
@@ -81,6 +89,7 @@ function RecentSong(): ReactElement {
   return (
     <>
       <h2 className={classes.subheading}>my most recently played song is:</h2>
+      <h3 className={classes.smallText}>(hopefully it's not embarrassing)</h3>
       <a
         target="_blank"
         rel="noreferrer"
