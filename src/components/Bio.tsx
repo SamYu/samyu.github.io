@@ -37,16 +37,16 @@ const CURRENTLY_WORKING_ON = [
 
 const MUSIC_RECOMMENDATIONS = [
   {
-    genre: 'experimental dubstep',
-    title: 'phonon - polyriddim',
+    genre: 'shoegaze',
+    title: 'My Bloody Valentine - Sometimes',
   },
   {
-    genre: 'korean hip-hop/r&b',
-    title: 'DPR LIVE - NEON',
+    genre: 'emo rap / rock',
+    title: 'POORSTACY - Don\'t Look at Me',
   },
   {
-    genre: 'pop punk',
-    title: 'My Chemical Romance - Welcome to the Black Parade',
+    genre: 'deep house',
+    title: 'Dombresky - Simple Hit',
   },
 ];
 
