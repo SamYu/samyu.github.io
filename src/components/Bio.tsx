@@ -6,9 +6,9 @@ import { faFile, faRssSquare } from '@fortawesome/free-solid-svg-icons';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-config.autoAddCss = false;
-
 import RecentSong from './RecentSong';
+
+config.autoAddCss = false;
 
 const ICONS = [
   {
@@ -31,22 +31,22 @@ const ICONS = [
 
 const CURRENTLY_WORKING_ON = [
   'building a static blog generator from Google Drive documents',
-  'learning to produce music using Ableton Live',
+  'my music',
   'rebuilding my personal site',
 ];
 
 const MUSIC_RECOMMENDATIONS = [
   {
-    genre: 'shoegaze',
-    title: 'My Bloody Valentine - Sometimes',
+    genre: 'future garage',
+    title: 'Fred again.. - Turn On The Lights again..',
   },
   {
-    genre: 'emo rap / rock',
-    title: 'POORSTACY - Don\'t Look at Me',
+    genre: 'indie pop',
+    title: 'COIN - Killing Me',
   },
   {
-    genre: 'deep house',
-    title: 'Dombresky - Simple Hit',
+    genre: 'rage',
+    title: 'Destroy Lonely - NOSTYLIST',
   },
 ];
 
@@ -60,7 +60,7 @@ const useStyles = createUseStyles((theme) => ({
   name: {
     fontFamily: 'Roboto',
     fontWeight: '900',
-    fontSize: '6rem',
+    fontSize: '4rem',
     margin: '10px 0',
     '@media (max-width: 900px)': {
       fontSize: '4rem',
@@ -82,7 +82,7 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   iconRow: {
-    margin: '40px 0',
+    margin: '20px 0',
   },
   icon: {
     marginRight: 50,
@@ -93,7 +93,7 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   textSection: {
-    margin: '50px 0',
+    margin: '30px 0',
     '@media (max-width: 1024px)': {
       margin: '20px 0',
     },
